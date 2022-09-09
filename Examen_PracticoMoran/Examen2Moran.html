@@ -1,0 +1,30 @@
+<script>
+let datos=[3];
+   
+   var maximo = 30;
+
+   var aux = [];
+
+   for (var i = 1; i < maximo; i++) {
+
+       var cont = 0;
+ 
+       for (var j = 0; j < datos.length; j++) {		
+  
+           if (i%datos[j]==0 && cont==0){
+     
+               aux.push(i);
+     
+               console.log(i+",");
+     
+               cont++;
+           }
+       }
+   }
+
+
+
+
+
+
+</script>
