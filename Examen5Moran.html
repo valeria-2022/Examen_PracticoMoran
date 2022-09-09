@@ -1,0 +1,35 @@
+<script>
+
+class Persona{
+    nombre;
+    apellido;
+    edad;
+        constructor(nombre,apellido,edad){
+      this.nombre = nombre;
+      this.apellido = apellido;
+      this.edad = edad;
+      console.log("Hola me llamo " + this.nombre +" "+ this.apellido + " tengo " + this.edad+ " años ");
+    }
+    get detalles(){
+        return this.nombre,this.apellido,this.edad;
+    }
+    }
+    const per1 = new Persona("Valeria","Moran",28);
+    class Jugador extends Persona{
+        constructor(nombre,apellido,edad,posicion){
+
+        }
+        get detalles(){
+            return this.nombre,this.apellido,this.edad,this.posicion;
+        }
+
+    }
+    class Entrenador extends Persona {
+        constructor(nombre,apellido,edad,aniosdeexperiencia,id_fed){
+
+        }
+        
+
+    }
+
+</script>
